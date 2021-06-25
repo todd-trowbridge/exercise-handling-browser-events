@@ -7,10 +7,16 @@
 </head>
 <body>
   <!-- HTML goes here -->
-
+  <button id='button-0'>Click Me</button>
   <script>
     // JavaScript goes here
-
+    let button = document.getElementById('button-0')
+    function leftClicked(event){
+      console.log('mouse x ' + event.screenX)
+      console.log('mouse y ' + event.screenY)
+      console.log(event)
+    }
+    button.addEventListener('click', leftClicked)
   </script>
 </body>
 </html>

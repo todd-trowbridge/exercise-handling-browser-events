@@ -7,10 +7,14 @@
 </head>
 <body>
   <!-- HTML goes here -->
-
+  <button id='button'>Click Me</button>
   <script>
     // JavaScript goes here
-
+    const button = document.getElementById('button')
+    function buttonClicked(){
+      console.log('button clicked')
+    }
+    button.onclick = buttonClicked
   </script>
 </body>
 </html>
